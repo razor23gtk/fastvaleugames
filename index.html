@@ -1,240 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>GAME MODES MAKER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>GAME MODES MAKER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1e1e2f, #2a2a3d);
-      color: #fff;
-    }
-    header {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #00ffcc;
-    }
-
-    .alert-banner {
-      background-color: #ff4444;
-      padding: 10px;
-      text-align: center;
-      color: #fff;
-      font-weight: bold;
-      animation: slideDown 1s ease-in-out;
-    }
-
-    @keyframes slideDown {
-      from { transform: translateY(-100%); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-
-    .search-bar {
-      margin: 20px auto;
-      max-width: 600px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .search-bar input {
-      width: 80%;
-      padding: 10px;
-      border: none;
-      border-radius: 5px 0 0 5px;
-      font-size: 1em;
-    }
-
-    .search-bar button {
-      padding: 10px 20px;
-      border: none;
-      background-color: #00ffcc;
-      color: #000;
-      border-radius: 0 5px 5px 0;
-      cursor: pointer;
-      font-size: 1em;
-    }
-
-    .games-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-
-    .game-card {
-      background-color: #222;
-      border-radius: 10px;
-      margin: 15px;
-      width: 260px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      overflow: hidden;
-      transition: transform 0.3s;
-      text-align: center;
-    }
-
-    .game-card:hover {
-      transform: scale(1.05);
-    }
-
-    .game-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    .game-card h2 {
-      margin: 10px;
-      font-size: 1.2em;
-      color: #00ffcc;
-    }
-
-    .game-card p {
-      margin: 5px;
-      font-size: 0.9em;
-      color: #ccc;
-    }
-
-    .game-card button {
-      margin: 10px;
-      padding: 10px;
-      width: calc(100% - 20px);
-      border: none;
-      background-color: #00ffcc;
-      color: #000;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1em;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      color: #888;
-    }
-  </style>
-
-  <!-- Content Locker Script -->
-  <script type="text/javascript">
-    var HRsGl_RwV_fOkFQc = {"it":4476259,"key":"ef560"};
-  </script>
-  <script src="https://d2v7l2267atlz5.cloudfront.net/0670767.js"></script>
-</head>
-
-<body>
-
-  <header>
-    <h1>GAME MODES MAKER</h1>
-  </header>
-
-  <div class="alert-banner">
-    ⚠️ If download doesn't work, disable Ad Blocker or try Google Chrome!
-  </div>
-
-  <div class="search-bar">
-    <input type="text" id="searchInput" placeholder="Search for a game...">
-    <button onclick="searchGames()">Search</button>
-  </div>
-
-  <div class="games-container" id="gamesContainer">
-
-    <div class="game-card" data-title="GTA San Cars Pack">
-      <img src="https://miro.medium.com/v2/resize:fit:1200/1*R_EIwtIqQdqjmo1013-QXQ.jpeg" alt="GTA San Cars Pack">
-      <h2>GTA San Cars Pack</h2>
-      <p>Downloads: 150K+</p>
-      <p>Rating: ⭐ 4.6</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-    <div class="game-card" data-title="GTA San Andreas">
-      <img src="https://vignette.wikia.nocookie.net/es.gta/images/c/c2/Grand_Theft_Auto_San_Andreas.JPG/revision/latest?cb=20161127211015" alt="GTA San Andreas">
-      <h2>GTA San Andreas</h2>
-      <p>Downloads: 500K+</p>
-      <p>Rating: ⭐ 4.8</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-    <div class="game-card" data-title="Truckers of Europe 3">
-      <img src="https://wallpapercave.com/wp/wp13430002.jpg" alt="Truckers of Europe 3">
-      <h2>Truckers of Europe 3</h2>
-      <p>Downloads: 300K+</p>
-      <p>Rating: ⭐ 4.7</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-    <div class="game-card" data-title="Roblox">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Roblox_Logo_2021.png" alt="Roblox">
-      <h2>Roblox</h2>
-      <p>Downloads: 1M+</p>
-      <p>Rating: ⭐ 4.9</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-    <div class="game-card" data-title="GTA Vice City">
-      <img src="https://i.pinimg.com/736x/45/03/41/4503418b30265dfe57cc4a281608d926.jpg" alt="GTA Vice City">
-      <h2>GTA Vice City</h2>
-      <p>Downloads: 400K+</p>
-      <p>Rating: ⭐ 4.5</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-    <div class="game-card" data-title="Free Fire Aimbot">
-      <img src="https://i.pinimg.com/736x/8b/6c/cf/8b6ccff780421ab65d4505b035dad2e9.jpg" alt="Free Fire Aimbot">
-      <h2>Free Fire Aimbot</h2>
-      <p>Downloads: 850K+</p>
-      <p>Rating: ⭐ 4.2</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-    <div class="game-card" data-title="Monopoly GO MOD">
-      <img src="https://i.pinimg.com/736x/c6/76/10/c676100dfbe34c2c159ce5b0017d6a00.jpg" alt="Monopoly GO MOD">
-      <h2>Monopoly GO MOD</h2>
-      <p>Downloads: 290K+</p>
-      <p>Rating: ⭐ 4.4</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-    <div class="game-card" data-title="Subway Surfers MOD">
-      <img src="https://i.pinimg.com/736x/2f/b5/4a/2fb54aa6c8a9d80e7a41b1b981575a3e.jpg" alt="Subway Surfers MOD">
-      <h2>Subway Surfers MOD</h2>
-      <p>Downloads: 720K+</p>
-      <p>Rating: ⭐ 4.3</p>
-      <button onclick="_Ri()">Download</button>
-    </div>
-
-  </div>
-
-  <footer>
-    &copy; 2025 GAME MODES MAKER. All rights reserved.
-  </footer>
-
-  <!-- JavaScript for search -->
-  <script>
-    function searchGames() {
-      var input = document.getElementById('searchInput').value.toLowerCase();
-      var cards = document.querySelectorAll('.game-card');
-      cards.forEach(card => {
-        const title = card.getAttribute('data-title').toLowerCase();
-        if (title.includes(input)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mods - Download Trending Games & Mods</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/nc7pmhBX/image.png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e1b2e;
+            --secondary: #232946;
+            --accent: #ff6f3c;
+            --accent2: #29c7ac;
+            --text: #f4f4f4;
+            --card: #232946;
+            --card-hover: #2a2e45;
+            --input-bg: #181825;
+            --input-border: #393e5c;
         }
-      });
-    }
-  </script>
-</body>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #181825 0%, #232946 100%);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(90deg, #232946 60%, #181825 100%);
+            padding: 2rem 0 1rem 0;
+            box-shadow: 0 2px 16px #000a;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.2rem;
+            color: var(--accent);
+            letter-spacing: 2px;
+            text-shadow: 0 2px 8px #0008;
+        }
+        nav {
+            float: right;
+        }
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--accent2);
+        }
+        .search-bar {
+            margin: 2rem auto 2rem auto;
+            max-width: 500px;
+            display: flex;
+            align-items: center;
+            background: var(--input-bg);
+            border-radius: 2rem;
+            box-shadow: 0 2px 12px #0004;
+            padding: 0.5rem 1.5rem;
+        }
+        .search-bar input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text);
+            font-size: 1.1rem;
+            padding: 0.5rem 0;
+        }
+        .search-bar input::placeholder {
+            color: #b0b0c3;
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .game-card {
+            background: var(--card);
+            border-radius: 1.2rem;
+            box-shadow: 0 4px 24px #0006;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            min-height: 420px;
+        }
+        .game-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px #000a;
+            background: var(--card-hover);
+        }
+        .game-thumb {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #111;
+        }
+        .game-content {
+            flex: 1;
+            padding: 1.2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        .game-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            color: var(--accent2);
+            margin-bottom: 0.5rem;
+        }
+        .game-desc {
+            color: #b0b0c3;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+        .game-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+        .rating {
+            color: #ffd700;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .downloads {
+            color: var(--accent2);
+            font-size: 1rem;
+        }
+        .download-btn {
+            background: linear-gradient(90deg, var(--accent), var(--accent2));
+            color: #fff;
+            border: none;
+            border-radius: 2rem;
+            padding: 0.7rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px #0004;
+            outline: none;
+        }
+        .download-btn:hover {
+            background: linear-gradient(90deg, var(--accent2), var(--accent));
+            box-shadow: 0 4px 16px #0006;
+        }
+        footer {
+            background: #181825;
+            color: #b0b0c3;
+            text-align: center;
+            padding: 2rem 0 1rem 0;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            border-top: 1px solid #232946;
+        }
+        @media (max-width: 600px) {
+            .container { width: 98%; }
+            .search-bar { max-width: 98%; }
+            .games-grid { gap: 1rem; }
+            .game-card { min-height: 380px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader"><div class="lds-dual-ring"></div></div>
+    <!-- زر إظهار القائمة الجانبية -->
+    <button id="sidebarToggle" onclick="toggleSidebar()" style="position:fixed;top:20px;left:20px;z-index:1100;background:#29c7ac;color:#232946;border:none;border-radius:1rem;padding:0.5rem 1rem;font-weight:bold;cursor:pointer;box-shadow:0 2px 8px #0004;">☰</button>
+    <aside id="sidebar" style="position:fixed;top:0;left:-220px;height:100vh;width:220px;background:linear-gradient(135deg,#232946 60%,#181825 100%);box-shadow:2px 0 16px #000a;z-index:1000;display:flex;flex-direction:column;align-items:flex-start;padding:2rem 1rem 1rem 1rem;transition:left 0.3s;">
+        <div style="font-family:'Orbitron',sans-serif;font-size:1.5rem;color:#29c7ac;margin-bottom:2rem;letter-spacing:2px;">Menu</div>
+        <nav style="width:100%;">
+            <ul style="list-style:none;padding:0;margin:0;width:100%;">
+                <li style="margin-bottom:1.5rem;">
+                    <a href="#" onclick="showSection('categories');toggleSidebar();" style="color:#f4f4f4;text-decoration:none;font-size:1.1rem;font-weight:700;display:block;padding:0.5rem 1rem;border-radius:1rem;transition:background 0.2s;">Categories</a>
+                </li>
+                <li style="margin-bottom:1.5rem;">
+                    <a href="#" onclick="showSection('games');toggleSidebar();" style="color:#f4f4f4;text-decoration:none;font-size:1.1rem;font-weight:700;display:block;padding:0.5rem 1rem;border-radius:1rem;transition:background 0.2s;">Games</a>
+                </li>
+                <li>
+                    <a href="#" onclick="showSection('applications');toggleSidebar();" style="color:#f4f4f4;text-decoration:none;font-size:1.1rem;font-weight:700;display:block;padding:0.5rem 1rem;border-radius:1rem;transition:background 0.2s;">Applications</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div id="mainContent" style="margin-left:0;transition:margin-left 0.3s;">
+        <header>
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+                <div class="logo">Game Mods</div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="javascript:_lI()">Mods</a>
+                    <a href="https://discord.gg/PPUTACfXBx" target="_blank" rel="noopener">Contact</a>
+                </nav>
+            </div>
+        </header>
+    
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for games or mods...">
+        </div>
+    
+        <!-- Centered Discord Image -->
+        <div style="display:flex;justify-content:center;align-items:center;margin:30px 0;">
+            <a href="https://discord.gg/PPUTACfXBx" target="_blank" rel="noopener">
+                <img src="https://i.postimg.cc/nc7pmhBX/image.png" alt="Join Discord" class="discord-img" style="max-width:220px;width:100%;height:auto;cursor:pointer;transition:transform 0.2s;">
+            </a>
+        </div>
+        <!-- زر العودة للأعلى -->
+        <button id="backToTop" title="Back to top">&#8679;</button>
+        <main class="container">
+            <!-- Categories Section (hidden by default) -->
+            <section id="categoriesSection" style="display:none;">
+                <h2 style="color:#29c7ac;font-family:'Orbitron',sans-serif;">Categories</h2>
+                <ul style="color:#f4f4f4;">
+                    <li>Action</li>
+                    <li>Adventure</li>
+                    <li>RPG</li>
+                    <li>Sports</li>
+                    <li>Simulation</li>
+                </ul>
+            </section>
+            <!-- Games Section (default visible) -->
+            <section class="games-grid" id="gamesSection">
+                <!-- Dummy Game Cards -->
+                <div class="game-card" data-title="GTA V" data-desc="Experience the thrill of Los Santos in this open-world action adventure.">
+                    <img class="game-thumb" src="https://i.postimg.cc/NjgQS2b6/GTA-5-Mobile-DOWNLOAD-Android-i-OS-BETA-APK-OBB.jpg" alt="GTA V">
+                    <div class="game-content">
+                        <div class="game-title">GTA V</div>
+                        <div class="game-desc">Experience the thrill of Los Santos in this open-world action adventure.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.8⭐</span>
+                            <span class="downloads">12,300 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="Minecraft" data-desc="Build, explore, and survive in endless worlds.">
+                    <img class="game-thumb" src="https://i.postimg.cc/50FJLBNV/Minecraft-Java-Bedrock-Edition-for-PC-Deluxe-Edition.jpg" alt="Minecraft">
+                    <div class="game-content">
+                        <div class="game-title">Minecraft</div>
+                        <div class="game-desc">Build, explore, and survive in endless worlds.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.7⭐</span>
+                            <span class="downloads">10,500 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="Red Dead Redemption 2" data-desc="Step into the boots of Arthur Morgan in this epic tale.">
+                    <img class="game-thumb" src="https://i.postimg.cc/59L1tSR5/Red-Dead-Redemption-2-PS4-Digital-Download-READ.jpg" alt="Red Dead Redemption 2">
+                    <div class="game-content">
+                        <div class="game-title">Red Dead Redemption 2</div>
+                        <div class="game-desc">Step into the boots of Arthur Morgan in this epic tale.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.9⭐</span>
+                            <span class="downloads">8,900 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="God of War" data-desc="Join Kratos and Atreus on a mythic journey.">
+                    <img class="game-thumb" src="https://i.postimg.cc/L8Q3SN7F/Eight-Essential-God-of-War-2018-Game-Tips-and-Tricks.jpg" alt="God of War">
+                    <div class="game-content">
+                        <div class="game-title">God of War</div>
+                        <div class="game-desc">Join Kratos and Atreus on a mythic journey.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.8⭐</span>
+                            <span class="downloads">7,200 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="Cyberpunk 2077" data-desc="Enter Night City and shape your own destiny.">
+                    <img class="game-thumb" src="https://i.postimg.cc/L6Vpt6Rn/d4bf93b9-5cfb-4b64-9dab-3271e3917757.jpg" alt="Cyberpunk 2077">
+                    <div class="game-content">
+                        <div class="game-title">Cyberpunk 2077</div>
+                        <div class="game-desc">Enter Night City and shape your own destiny.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.2⭐</span>
+                            <span class="downloads">6,100 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="Elden Ring" data-desc="Rise, Tarnished, and become an Elden Lord.">
+                    <img class="game-thumb" src="https://i.postimg.cc/L4kk5H7T/Elden-Ring-La-diatriba-sulla-grafica-ha-senso.jpg" alt="Elden Ring">
+                    <div class="game-content">
+                        <div class="game-title">Elden Ring</div>
+                        <div class="game-desc">Rise, Tarnished, and become an Elden Lord.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.9⭐</span>
+                            <span class="downloads">9,800 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="FIFA 25" data-desc="Play the world’s game with HyperMotion2 Technology.">
+                    <img class="game-thumb" src="https://i.postimg.cc/zDPhVV7T/image.png" alt="FIFA 25">
+                    <div class="game-content">
+                        <div class="game-title">FIFA 25</div>
+                        <div class="game-desc">Play the world’s game with HyperMotion2 Technology.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.5⭐</span>
+                            <span class="downloads">8,100 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="Assassin’s Creed Valhalla" data-desc="Become Eivor, a legendary Viking warrior.">
+                    <img class="game-thumb" src="https://i.postimg.cc/vHfmbBNY/a7ae6e0e-982f-4aeb-b71b-c826b7796f18.jpg" alt="Assassin’s Creed Valhalla">
+                    <div class="game-content">
+                        <div class="game-title">Assassin’s Creed Valhalla</div>
+                        <div class="game-desc">Become Eivor, a legendary Viking warrior.</div>
+                        <div class="game-meta">
+                            <span class="rating">4.6⭐</span>
+                            <span class="downloads">7,800 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <!-- Add more games as needed -->
+            </section>
+            <!-- Applications Section (hidden by default) -->
+            <section class="games-grid" id="applicationsSection" style="display:none;">
+                <div class="game-card" data-title="WhatsapGb" data-desc="WhatsApp GB Modded Version">
+                    <img class="game-thumb" src="https://i.postimg.cc/KYgttLG6/image.png" alt="WhatsapGb">
+                    <div class="game-content">
+                        <div class="game-title">WhatsapGb</div>
+                        <div class="game-desc">WhatsApp GB Modded Version</div>
+                        <div class="game-meta">
+                            <span class="rating">4.7⭐</span>
+                            <span class="downloads">15,000 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="facebook Mod" data-desc="Facebook Modded Version">
+                    <img class="game-thumb" src="https://i.postimg.cc/ZYLpPJm5/image.png" alt="facebook Mod">
+                    <div class="game-content">
+                        <div class="game-title">facebook Mod</div>
+                        <div class="game-desc">Facebook Modded Version</div>
+                        <div class="game-meta">
+                            <span class="rating">4.6⭐</span>
+                            <span class="downloads">13,200 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="TikTok mod" data-desc="TikTok Modded Version">
+                    <img class="game-thumb" src="https://i.postimg.cc/YqnFV8hc/image.png" alt="TikTok mod">
+                    <div class="game-content">
+                        <div class="game-title">TikTok mod</div>
+                        <div class="game-desc">TikTok Modded Version</div>
+                        <div class="game-meta">
+                            <span class="rating">4.8⭐</span>
+                            <span class="downloads">17,400 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="instagram yellow" data-desc="Instagram Yellow Mod">
+                    <img class="game-thumb" src="https://i.postimg.cc/xCnqqbcy/image.png" alt="instagram yellow">
+                    <div class="game-content">
+                        <div class="game-title">instagram yellow</div>
+                        <div class="game-desc">Instagram Yellow Mod</div>
+                        <div class="game-meta">
+                            <span class="rating">4.5⭐</span>
+                            <span class="downloads">11,900 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+                <div class="game-card" data-title="Spotify mod free" data-desc="Spotify Free Modded Version">
+                    <img class="game-thumb" src="https://i.postimg.cc/2SW5wxW7/image.png" alt="Spotify mod free">
+                    <div class="game-content">
+                        <div class="game-title">Spotify mod free</div>
+                        <div class="game-desc">Spotify Free Modded Version</div>
+                        <div class="game-meta">
+                            <span class="rating">4.9⭐</span>
+                            <span class="downloads">19,800 downloads</span>
+                        </div>
+                        <button class="download-btn" onclick="_lI()">Download</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            &copy; 2025 Game Mods. All rights reserved.
+        </footer>
+    
+        <!-- Content Locker Script -->
+        <script type="text/javascript">
+            var lIrlA_fEm_aefPKc={"it":4475690,"key":"b0868"};
+        </script>
+        <script src="https://d2yc6hxtq0phup.cloudfront.net/89f03b6.js"></script>
+    
+        <!-- Search Functionality -->
+        <script>
+            // Loader
+            window.addEventListener('load', function() {
+                setTimeout(function(){
+                    document.getElementById('loader').classList.add('hidden');
+                }, 700);
+            });
+            // Back to top button
+            var backToTop = document.getElementById('backToTop');
+            window.onscroll = function() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    backToTop.style.display = "block";
+                } else {
+                    backToTop.style.display = "none";
+                }
+            };
+            backToTop.onclick = function() {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            };
+
+            // Sidebar toggle
+            function toggleSidebar() {
+                var sidebar = document.getElementById('sidebar');
+                var mainContent = document.getElementById('mainContent');
+                if (sidebar.style.left === '0px') {
+                    sidebar.style.left = '-220px';
+                    mainContent.style.marginLeft = '0';
+                } else {
+                    sidebar.style.left = '0px';
+                    if(window.innerWidth > 700){
+                        mainContent.style.marginLeft = '220px';
+                    }
+                }
+            }
+
+            // Show section function (add this!)
+            function showSection(section) {
+                document.getElementById('categoriesSection').style.display = 'none';
+                document.getElementById('gamesSection').style.display = 'none';
+                document.getElementById('applicationsSection').style.display = 'none';
+                if(section === 'categories') {
+                    document.getElementById('categoriesSection').style.display = '';
+                } else if(section === 'games') {
+                    document.getElementById('gamesSection').style.display = '';
+                } else if(section === 'applications') {
+                    document.getElementById('applicationsSection').style.display = '';
+                }
+            }
+
+            // Search functionality (already present)
+            const allGames = Array.from(document.querySelectorAll('.game-card'));
+            document.getElementById('searchInput').addEventListener('input', function() {
+                const filter = this.value.toLowerCase();
+                allGames.forEach(card => {
+                    const title = card.getAttribute('data-title').toLowerCase();
+                    const desc = card.getAttribute('data-desc').toLowerCase();
+                    if (title.includes(filter) || desc.includes(filter)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>
